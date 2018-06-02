@@ -14,6 +14,8 @@ import { AboutModule } from './about/about.module';
 import { LoginModule } from './login/login.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ComponentComponent } from './component/component.component';
+import { MyListComponent } from './my-list/my-list.component';
 
 @NgModule({
   imports: [
@@ -30,7 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
     LoginModule,
     AppRoutingModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, ComponentComponent, MyListComponent],
   providers: [
   ],
   bootstrap: [AppComponent]
