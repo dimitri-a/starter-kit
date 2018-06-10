@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MylistService }  from './mylist.service';
 @Component({
   selector: 'app-my-list',
   templateUrl: './my-list.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyListComponent implements OnInit {
 
-  constructor() { }
+  let players=[];
+
+  constructor(private mylistservice:MylistService) {
+    let players = mylistservice.getGreeting();
+   }
 
   ngOnInit() {
+
   }
 
 }

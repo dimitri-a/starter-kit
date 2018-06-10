@@ -19,6 +19,7 @@ export class QuoteService {
   constructor(private httpClient: HttpClient) { }
 
   getRandomQuote(context: RandomQuoteContext): Observable<string> {
+    debugger
     return this.httpClient
       .cache()
       .get(routes.quote(context))
