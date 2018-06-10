@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {MylistService} from './my-list/mylist.service';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
@@ -9,6 +10,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: []
+  providers: [MylistService]
 })
 export class AppRoutingModule { }
